@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WhatsApp</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wa-wrap">
+
+  <!-- ══ SIDEBAR ══ -->
+  <div class="wa-sidebar" id="sidebar">
+    <div class="wa-sidebar-header">
+      <div class="wa-avatar-me">A</div>
+      <div class="wa-header-icons">
+        <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><circle cx="9" cy="7" r="3"/><circle cx="15" cy="7" r="3"/><path d="M2 20c0-4 3.1-7 7-7h6c3.9 0 7 3 7 7"/></svg>
+        <svg class="wa-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg>
+        <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+        <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="5" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="19" r="1.5"/></svg>
+      </div>
+    </div>
+
+    <div class="wa-search">
+      <div class="wa-search-box">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#8696a0" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input type="text" id="searchInput" placeholder="Search or start new chat">
+      </div>
+    </div>
+
+    <div class="wa-chat-list" id="chatList">
+
+      <div class="wa-chat-item active" data-name="Sara Ahmed" data-initial="S" data-color="#00a884" data-status="online">
+        <div class="av-wrap">
+          <div class="wa-chat-avatar" style="background:#00a884">S</div>
+          <div class="online-dot"></div>
+        </div>
+        <div class="wa-chat-info">
+          <div class="wa-chat-top"><span class="wa-chat-name">Sara Ahmed</span><span class="wa-chat-time new">12:47</span></div>
+          <div class="wa-chat-bottom"><span class="wa-chat-preview">✓✓ Okay! See you at 3pm 👍</span><span class="wa-unread">3</span></div>
+        </div>
+      </div>
+
+      <div class="wa-chat-item" data-name="Family Group 👨‍👩‍👧‍👦" data-initial="F" data-color="#7b61ff" data-status="">
+        <div class="av-wrap">
+          <div class="wa-chat-avatar" style="background:#7b61ff">F</div>
+        </div>
+        <div class="wa-chat-info">
+          <div class="wa-chat-top"><span class="wa-chat-name">Family Group 👨‍👩‍👧‍👦</span><span class="wa-chat-time">11:30</span></div>
+          <div class="wa-chat-bottom"><span class="wa-chat-preview">Baba: Dinner at 8, don't be late!</span></div>
+        </div>
+      </div>
+
+      <div class="wa-chat-item" data-name="Usman Malik" data-initial="U" data-color="#e67e22" data-status="">
+        <div class="av-wrap">
+          <div class="wa-chat-avatar" style="background:#e67e22">U</div>
+        </div>
+        <div class="wa-chat-info">
+          <div class="wa-chat-top"><span class="wa-chat-name">Usman Malik</span><span class="wa-chat-time">Yesterday</span></div>
+          <div class="wa-chat-bottom"><span class="wa-chat-preview">Bhai wo code kab tak dega?</span><span class="wa-unread">1</span></div>
+        </div>
+      </div>
+
+      <div class="wa-chat-item" data-name="Zara Khan" data-initial="Z" data-color="#e91e8c" data-status="">
+        <div class="av-wrap">
+          <div class="wa-chat-avatar" style="background:#e91e8c">Z</div>
+        </div>
+        <div class="wa-chat-info">
+          <div class="wa-chat-top"><span class="wa-chat-name">Zara Khan</span><span class="wa-chat-time">Yesterday</span></div>
+          <div class="wa-chat-bottom"><span class="wa-chat-preview">🎙 Voice Message · 0:42</span></div>
+        </div>
+      </div>
+
+      <div class="wa-chat-item" data-name="Dev Team 💻" data-initial="D" data-color="#2196f3" data-status="online">
+        <div class="av-wrap">
+          <div class="wa-chat-avatar" style="background:#2196f3">D</div>
+          <div class="online-dot"></div>
+        </div>
+        <div class="wa-chat-info">
+          <div class="wa-chat-top"><span class="wa-chat-name">Dev Team 💻</span><span class="wa-chat-time">Mon</span></div>
+          <div class="wa-chat-bottom"><span class="wa-chat-preview">Ali: PR review kar lo jaldi</span></div>
+        </div>
+      </div>
+
+      <div class="wa-chat-item" data-name="Raheel Qureshi" data-initial="R" data-color="#ff7043" data-status="">
+        <div class="av-wrap">
+          <div class="wa-chat-avatar" style="background:#ff7043">R</div>
+        </div>
+        <div class="wa-chat-info">
+          <div class="wa-chat-top"><span class="wa-chat-name">Raheel Qureshi</span><span class="wa-chat-time">Sun</span></div>
+          <div class="wa-chat-bottom"><span class="wa-chat-preview">😂😂 yaar ye scene tha!</span></div>
+        </div>
+      </div>
+
+      <div class="wa-chat-item" data-name="Nadia Siddiqui" data-initial="N" data-color="#9c27b0" data-status="">
+        <div class="av-wrap">
+          <div class="wa-chat-avatar" style="background:#9c27b0">N</div>
+        </div>
+        <div class="wa-chat-info">
+          <div class="wa-chat-top"><span class="wa-chat-name">Nadia Siddiqui</span><span class="wa-chat-time">Fri</span></div>
+          <div class="wa-chat-bottom"><span class="wa-chat-preview">📷 Photo</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══ CHAT WINDOW ══ -->
+  <div class="wa-chat-window" id="chatWindow">
+    <div class="wa-chat-header">
+      <div class="wa-back-btn" id="backBtn">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#aebac1" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+      </div>
+      <div class="av-wrap">
+        <div class="wa-chat-avatar" id="hdrAvatar" style="background:#00a884;width:40px;height:40px;font-size:14px">S</div>
+        <div class="online-dot" id="hdrDot"></div>
+      </div>
+      <div class="wa-chat-header-info">
+        <div class="wa-chat-header-name" id="hdrName">Sara Ahmed</div>
+        <div class="wa-chat-header-status" id="hdrStatus">online</div>
+      </div>
+      <div class="wa-header-actions">
+        <svg class="wa-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+        <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C9.61 21 3 14.39 3 6a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+        <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="5" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="19" r="1.5"/></svg>
+      </div>
+    </div>
+
+    <div class="wa-messages" id="msgList">
+      <div class="wa-date-label"><span>Today</span></div>
+      <div class="wa-bubble-row recv">
+        <div class="wa-bubble recv">
+          <div class="wa-bubble-text">Assalam o alaikum! Kya haal hain? 😊</div>
+          <div class="wa-bubble-meta"><span class="wa-bubble-time">12:31</span></div>
+        </div>
+      </div>
+      <div class="wa-bubble-row sent">
+        <div class="wa-bubble sent">
+          <div class="wa-bubble-text">Walaikum salam! Alhamdulillah, sab theek! Tumhara kya haal?</div>
+          <div class="wa-bubble-meta"><span class="wa-bubble-time">12:33</span><span class="wa-tick">✓✓</span></div>
+        </div>
+      </div>
+      <div class="wa-bubble-row recv">
+        <div class="wa-bubble recv">
+          <div class="wa-bubble-text">Bilkul theek hun. Aaj meeting hai kya office mein?</div>
+          <div class="wa-bubble-meta"><span class="wa-bubble-time">12:35</span></div>
+        </div>
+      </div>
+      <div class="wa-bubble-row sent">
+        <div class="wa-bubble sent">
+          <div class="wa-bubble-text">Haan, 3 baje hai. Tum bhi aa rahe ho na?</div>
+          <div class="wa-bubble-meta"><span class="wa-bubble-time">12:40</span><span class="wa-tick">✓✓</span></div>
+        </div>
+      </div>
+      <div class="wa-bubble-row sent">
+        <div class="wa-bubble sent">
+          <div class="wa-bubble-text">Conference room B mein hai btw 🏢</div>
+          <div class="wa-bubble-meta"><span class="wa-bubble-time">12:41</span><span class="wa-tick">✓✓</span></div>
+        </div>
+      </div>
+      <div class="wa-bubble-row recv">
+        <div class="wa-bubble recv">
+          <div class="wa-bubble-text">Okay! See you at 3pm 👍</div>
+          <div class="wa-bubble-meta"><span class="wa-bubble-time">12:47</span></div>
+        </div>
+      </div>
+      <div class="wa-bubble-row recv" id="typingRow">
+        <div class="typing-bubble">
+          <div class="tdot"></div>
+          <div class="tdot"></div>
+          <div class="tdot"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wa-input-bar">
+      <span class="wa-emoji-btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8696a0" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8.5 14s1.5 2 3.5 2 3.5-2 3.5-2"/><line x1="9" y1="9" x2="9.01" y2="9" stroke-linecap="round" stroke-width="2.5"/><line x1="15" y1="9" x2="15.01" y2="9" stroke-linecap="round" stroke-width="2.5"/></svg>
+      </span>
+      <span class="wa-attach-btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8696a0" stroke-width="2"><path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"/></svg>
+      </span>
+      <textarea class="wa-input-box" id="msgInput" rows="1" placeholder="Type a message"></textarea>
+      <div class="wa-send-btn" id="sendBtn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/></svg>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
